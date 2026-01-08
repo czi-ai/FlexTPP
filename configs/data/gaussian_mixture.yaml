@@ -1,0 +1,4 @@
+_target_: flex_tpp.data.toy.GaussianMixtureDataModule
+batch_size: 220
+std: 0.5
+num_modes: 3

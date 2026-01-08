@@ -1,0 +1,5 @@
+defaults:
+  - model: model-100k
+  - optim: default
+  - trainer: default
+  - data: toy

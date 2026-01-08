@@ -1,0 +1,5 @@
+_target_: flex_tpp.data.TPPDataset.TPPDataModule
+batch_size: 256
+dataset: amazon
+max_num_classes: 16
+dim: 250

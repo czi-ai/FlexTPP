@@ -1,0 +1,31 @@
+max_epochs: 1000
+# check_val_every_n_epoch: 5
+
+callbacks:
+  - _target_: lightning.pytorch.callbacks.EarlyStopping
+    monitor: val/nll
+    check_finite: false
+    patience: 300
+
+  - _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    monitor: val/nll
+    save_top_k: 1
+    save_last: true
+    mode: "min"
+
+  - _target_: lightning.pytorch.callbacks.LearningRateMonitor
+
+  - _target_: flex_tpp.utils.ConciseProgressBar
+
+  - _target_: lightning.pytorch.callbacks.ModelSummary
+    max_depth: 2
+
+logger:
+  - _target_: lightning.pytorch.loggers.WandbLogger
+    project: flex_tpp
+    reinit: true
+    save_dir: checkpoints
+
+gradient_clip_algorithm: norm
+gradient_clip_val: 1.0
+precision: bf16-mixed

@@ -1,0 +1,14 @@
+[project]
+name = "FlexTPP"
+version = "1.0"
+description = "A flexible temporal point process modeling library."
+requires-python = ">=3.12"
+dependencies = [
+    "torch",
+    "hydra-core",
+    "matplotlib",
+    "lightning",
+    "wandb",
+    "datasets",
+    "FrEIA @ git+https://github.com/vislearn/FrEIA",
+]

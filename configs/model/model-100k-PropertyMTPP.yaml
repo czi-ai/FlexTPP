@@ -1,0 +1,25 @@
+_target_: flex_tpp.model_pl.PropertyMTPPFlexTPPModule
+depth: 6
+dim_k: 24
+n_head: 4
+dim_ff: 256
+non_linearity: GELU
+normalize: true
+dropout: 0.15
+embed_event_index: True
+
+conditioning_network:
+  _target_: flex_tpp.model.EmbeddingTransformer
+  dim_k: null
+  window_size: 32
+  dim_ff: 256
+  depth: 2
+  normalize: true
+  non_linearity: GELU
+  dropout: 0.1
+  is_causal: false
+  positional_encoding_migrated: True
+
+monotonic_network:
+  _target_: flex_tpp.invertible_1d.Flow1D
+  bins: 20

@@ -1,0 +1,16 @@
+defaults:
+  - default
+  - override data: retweet
+  - override model: model-100k
+  - _self_
+
+model:
+  depth: 5
+  dim_k: 32
+  dropout: 0.2
+  monotonic_bins: 10
+data:
+  batch_size: 246
+optim:
+  optimizer:
+    lr: 0.00015

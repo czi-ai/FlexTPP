@@ -1,0 +1,4 @@
+_target_: flex_tpp.data.toy.TwoMoonsDataModule
+batch_size: 220
+noise: 0.1
+shuffle: true

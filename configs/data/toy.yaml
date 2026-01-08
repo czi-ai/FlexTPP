@@ -1,0 +1,7 @@
+_target_: flex_tpp.data.TPPDataset.TPPDataModule
+batch_size: 256
+dataset: toy
+max_num_classes: 3
+dim: 250
+mode: type
+transform: zero_one

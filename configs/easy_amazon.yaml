@@ -1,0 +1,16 @@
+defaults:
+  - default
+  - override data: amazon
+  - override model: model-100k
+  - _self_
+
+model:
+  depth: 5
+  dim_k: 12
+  dropout: 0.4
+  monotonic_bins: 11
+data:
+  batch_size: 159
+optim:
+  optimizer:
+    lr: 0.001

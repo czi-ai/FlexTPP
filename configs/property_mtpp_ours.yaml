@@ -1,0 +1,19 @@
+defaults:
+  - default
+  - override data: harmonic
+  - override model: model-100k-PropertyMTPP
+  - _self_
+
+data:
+  batch_size: 160
+model:
+  conditioning_network:
+    window_size: 240
+  monotonic_network:
+    bins: 8
+  dropout: 0.2
+  dim_k: 28
+  depth: 7
+optim:
+  optimizer:
+    lr: 0.001

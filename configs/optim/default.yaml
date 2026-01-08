@@ -1,0 +1,12 @@
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 0.0008
+lr_scheduler:
+  scheduler:
+    _target_: torch.optim.lr_scheduler.OneCycleLR
+    total_steps: 1000
+    div_factor: 10
+    pct_start: 0.1
+  # monitor: val/nll
+  interval: epoch
+  frequency: 1

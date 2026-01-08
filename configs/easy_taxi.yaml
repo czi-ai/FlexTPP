@@ -1,0 +1,16 @@
+defaults:
+  - default
+  - override data: taxi
+  - override model: model-100k
+  - _self_
+
+model:
+  depth: 5
+  dim_k: 24
+  dropout: 0.44
+  monotonic_bins: 8
+data:
+  batch_size: 176
+optim:
+  optimizer:
+    lr: 0.0005

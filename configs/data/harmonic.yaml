@@ -1,0 +1,5 @@
+_target_: flex_tpp.data.property_mtpp.PropertyMTTPDataModule
+batch_size: 174
+file_name: data/sines/sines.pkl
+num_workers: 4
+order: SDTP

@@ -1,0 +1,9 @@
+_target_: flex_tpp.model_pl.FlexTPPModule
+depth: 2
+dim_k: 16
+n_head: 4
+dim_ff: 256
+non_linearity: GELU
+normalize: true
+dropout: 0.1
+monotonic_bins: 128

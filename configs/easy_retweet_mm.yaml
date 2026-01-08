@@ -1,0 +1,18 @@
+defaults:
+  - default
+  - override data: retweet
+  - override model: model-100k
+  - _self_
+
+model:
+  depth: 5
+  dim_k: 32
+  dropout: 0.2
+  monotonic_network:
+    _target_: flex_tpp.invertible_1d.GMM1D
+    num_components: 64
+data:
+  batch_size: 246
+optim:
+  optimizer:
+    lr: 0.00015

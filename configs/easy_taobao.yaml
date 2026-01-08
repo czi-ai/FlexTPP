@@ -1,0 +1,16 @@
+defaults:
+  - default
+  - override data: taobao
+  - override model: model-100k
+  - _self_
+
+model:
+  depth: 4
+  dim_k: 12
+  dropout: 0.38
+  monotonic_bins: 29
+data:
+  batch_size: 207
+optim:
+  optimizer:
+    lr: 0.0008
