@@ -1,4 +1,4 @@
-# Transformer for Mixed-Type Event Sequences
+# Transformers for Mixed-Type Event Sequences
 
 Felix Draxler, Yang Meng, Kai Nelson, Lukas Laskowski, Yibo Yang, Theofanis Karaletsos, Stephan Mandt
 
